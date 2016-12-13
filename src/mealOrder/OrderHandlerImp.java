@@ -176,7 +176,7 @@ public class OrderHandlerImp implements OrderHandler{
 					{
 						bill.add(new Meal(orderMeal.getType(),restaurantMealAmount));
 						//reset the order list for the next restaurant to order
-						_orderList.get(_orderList.indexOf(orderMeal)).setAmount(orderMeal.getAmount() - restaurantMealAmount);;//no need to order anymore
+						_orderList.get(_orderList.indexOf(orderMeal)).setAmount(orderMeal.getAmount() - restaurantMealAmount);
 						
 						//reset restaurant's capacity
 						_restaurants.get(_restaurants.indexOf(restaurant)).getCapacity().get(index).setAmount(0);
